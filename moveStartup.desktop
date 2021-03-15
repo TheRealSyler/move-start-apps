@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=Utility;
+Comment=move Start up apps
+Exec=moveStartupApps
+MimeType=x-scheme-handler/spotify;
+Name=MoveStartUp
+Terminal=false
+Type=Application
+X-Deepin-Vendor=user-custom
