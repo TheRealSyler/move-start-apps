@@ -23,4 +23,5 @@ async function findAndMove(name: string, desktop: number, displayIndex: number) 
 
 await sleep(1000)
 
-await findAndMove('spotify.Spotify', 1, 1)
+await findAndMove('spotify.Spotify', 2, 1)
+await findAndMove('github desktop.GitHub Desktop', 1, 1)
