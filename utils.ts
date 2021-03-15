@@ -99,3 +99,10 @@ export async function moveWindowDisplay(id: string, pos: Position) {
   await Exec('wmctrl', '-i', '-r', id, '-b', `remove,hidden`)
 }
 
+export async function sleep(ms: number): Promise<void> {
+  return new Promise((res) => {
+    setTimeout(() => {
+      res()
+    }, ms);
+  })
+}

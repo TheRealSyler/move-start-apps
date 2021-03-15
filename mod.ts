@@ -1,5 +1,5 @@
 import { action, error } from "./log.ts";
-import { getAppsInfo, getDisplayInfo, moveWindow, moveWindowDisplay } from "./utils.ts";
+import { getAppsInfo, getDisplayInfo, moveWindow, moveWindowDisplay, sleep } from "./utils.ts";
 
 
 const displayInfo = await getDisplayInfo()
@@ -20,5 +20,7 @@ async function findAndMove(name: string, desktop: number, displayIndex: number) 
   }
   error('Could not move', name, 'to', '' + desktop)
 }
+
+await sleep(1000)
 
 await findAndMove('spotify.Spotify', 1, 1)
