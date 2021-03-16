@@ -21,6 +21,7 @@ while (searchForApps) {
   await sleep(500)
 }
 action('Found Apps')
+await sleep(1000)
 
 const displayInfo = await getDisplayInfo()
 const appsInfo = await getAppsInfo()
